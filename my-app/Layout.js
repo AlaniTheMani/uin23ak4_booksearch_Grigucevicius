@@ -4,14 +4,12 @@ function Layout({ children }) {
   return (
     <div className="container">
       <header>
-        {/* Legg til HTML for header */}
+        <h1>Book Search</h1>
+        <input type="text" placeholder="Search Books..." />
       </header>
       <main>
         {children}
       </main>
-      <footer>
-        {/* Legg til HTML for footer */}
-      </footer>
     </div>
   );
 }
