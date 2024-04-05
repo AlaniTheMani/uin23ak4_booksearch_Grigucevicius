@@ -2,7 +2,10 @@ import React from 'react';
 
 function SearchBar({ handleSearch }) {
   const handleChange = (e) => {
-    handleSearch(e.target.value);
+    const query = e.target.value;
+    if (query.length >= 3) {
+      handleSearch(query);
+    }
   };
 
   return (
