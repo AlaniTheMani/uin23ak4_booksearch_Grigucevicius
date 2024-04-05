@@ -1,4 +1,4 @@
-const API_URL = 'https://openlibrary.org/search.json';
+const API_URL = 'https://openlibrary.org/search?q=james+bond&mode=everything';
 
 async function searchBooks(query) {
   try {
